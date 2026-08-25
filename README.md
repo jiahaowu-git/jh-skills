@@ -6,13 +6,18 @@
 
 ## 目录
 
-- [项目简介](#项目简介)
-- [Skill 列表](#skill-列表)
-- [目录结构](#目录结构)
-- [什么是 Skill](#什么是-skill)
-- [使用方式](#使用方式)
-- [贡献规范](#贡献规范)
-- [许可证](#许可证)
+- [jh-skills](#jh-skills)
+  - [目录](#目录)
+  - [项目简介](#项目简介)
+  - [Skill 列表](#skill-列表)
+  - [目录结构](#目录结构)
+  - [什么是 Skill](#什么是-skill)
+  - [使用方式](#使用方式)
+    - [在 Agent 框架中加载](#在-agent-框架中加载)
+    - [直接运行脚本](#直接运行脚本)
+    - [阅读 Skill 规约](#阅读-skill-规约)
+  - [贡献规范](#贡献规范)
+  - [许可证](#许可证)
 
 ---
 
@@ -33,6 +38,7 @@
 |---|---|---|---|
 | [kaspi-comment-statistics](./kaspi-comment-statistics/) | 从 Kaspi.kz 商品 URL 抽取评论统计并生成 9 字段中文报告 | v4.2 | 哈萨克斯坦电商商品评论分析 |
 | [readme](./readme/) | 为软件项目生成中英双语 README 文档 | v1.0.0 | 项目文档创建与重写 |
+| [wjh-web-design-01](./web-design/wjh-web-design-01.md) | 生成 GMI Cloud 视觉语言的 SaaS/AI/GPU 单页落地页（近黑 hero + lime 关键词高亮 + 黄波浪 CTA） | v1.0 | SaaS / AI 基础设施 / GPU 云落地页 |
 
 ## 目录结构
 
@@ -47,8 +53,10 @@ jh-skills/
 │   └── references/
 │       ├── kaspi-extraction-recipe.md     #   API 抽取配方
 │       └── edge-cases.md                  #   边界场景与译名表
-└── readme/                                # Skill: README 生成器
-    └── SKILL.md                           #   Agent 加载的规约文件
+├── readme/                                # Skill: README 生成器
+│   └── SKILL.md                           #   Agent 加载的规约文件
+└── web-design/                            # Skill: SaaS Landing Page (GMI 视觉)
+    └── wjh-web-design-01.md               #   单文件 Skill 规约
 ```
 
 ## 什么是 Skill
@@ -120,4 +128,4 @@ MIT License. 各 Skill 的具体许可证见其 `SKILL.md` 的 YAML frontmatter�
 
 ---
 
-**维护者**：Hermes Agent · **最后更新**：2026-06-29
+**维护者**：Hermes Agent · **最后更新**：2026-08-25
